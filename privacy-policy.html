@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Privacy Policy – Find Mouse</title>
+<meta name="description" content="Find Mouse Privacy Policy – How we collect, use, and protect your information.">
+
+<style>
+:root {
+    --primary: #f59e0b;
+    --primary-dark: #d97706;
+    --accent: #ec4899;
+    --bg: #fffaf0;
+    --text: #1c1917;
+    --secondary: #78716c;
+    --card: #ffffff;
+    --border: #f1e7d6;
+    --gradient: linear-gradient(135deg, #f59e0b 0%, #ec4899 100%);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.container {
+    width: min(860px, 90%);
+    margin: auto;
+}
+
+/* NAV */
+.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 18px 0;
+    background: rgba(255,250,240,.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0,0,0,.06);
+}
+
+.nav-inner {
+    width: min(1100px, 90%);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.nav-brand img {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+}
+
+.nav-back {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color .2s;
+}
+
+.nav-back:hover { color: var(--primary-dark); }
+
+/* HERO BANNER */
+.hero-banner {
+    padding: 120px 0 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: .25;
+    z-index: 0;
+}
+
+.hero-blob.b1 {
+    width: 320px; height: 320px;
+    background: #f59e0b;
+    top: -80px; left: -80px;
+}
+
+.hero-blob.b2 {
+    width: 260px; height: 260px;
+    background: #ec4899;
+    top: 40px; right: -60px;
+}
+
+.hero-banner-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.page-tag {
+    display: inline-block;
+    background: #fff7e6;
+    color: var(--primary-dark);
+    padding: 7px 16px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    border: 1px solid #fde6b8;
+}
+
+.page-title {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+}
+
+.page-title span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-subtitle {
+    color: var(--secondary);
+    font-size: 16px;
+}
+
+/* CONTENT */
+.legal-body {
+    padding: 20px 0 100px;
+}
+
+.legal-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 48px 52px;
+    margin-bottom: 24px;
+}
+
+.legal-card .section-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--gradient);
+    color: #fff;
+    font-weight: 800;
+    font-size: 15px;
+    margin-bottom: 14px;
+    flex-shrink: 0;
+}
+
+.legal-card h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 14px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.legal-card p {
+    color: var(--secondary);
+    font-size: 15.5px;
+    margin-bottom: 12px;
+}
+
+.legal-card p:last-child { margin-bottom: 0; }
+
+.legal-card ul {
+    list-style: none;
+    margin: 10px 0 14px;
+}
+
+.legal-card ul li {
+    color: var(--secondary);
+    font-size: 15.5px;
+    padding: 5px 0 5px 22px;
+    position: relative;
+}
+
+.legal-card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--gradient);
+}
+
+.legal-card strong { color: var(--text); font-weight: 700; }
+
+.service-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 14px 0;
+}
+
+.service-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff7e6;
+    border: 1px solid #fde6b8;
+    border-radius: 999px;
+    padding: 7px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+.contact-box {
+    background: linear-gradient(135deg, #fff7e6, #fce7f3);
+    border: 1px solid #fde6b8;
+    border-radius: 16px;
+    padding: 22px 26px;
+    margin-top: 14px;
+}
+
+.contact-box a {
+    color: var(--primary-dark);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact-box a:hover { text-decoration: underline; }
+
+
+/* FADE IN */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp .6s ease forwards;
+}
+
+.fade-in:nth-child(2) { animation-delay: .08s; }
+.fade-in:nth-child(3) { animation-delay: .14s; }
+.fade-in:nth-child(4) { animation-delay: .20s; }
+.fade-in:nth-child(5) { animation-delay: .26s; }
+.fade-in:nth-child(6) { animation-delay: .32s; }
+.fade-in:nth-child(7) { animation-delay: .38s; }
+.fade-in:nth-child(8) { animation-delay: .44s; }
+.fade-in:nth-child(9) { animation-delay: .50s; }
+.fade-in:nth-child(10) { animation-delay: .56s; }
+.fade-in:nth-child(11) { animation-delay: .62s; }
+.fade-in:nth-child(12) { animation-delay: .68s; }
+.fade-in:nth-child(13) { animation-delay: .74s; }
+
+@keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .legal-card { padding: 28px 22px; }
+    .hero-banner { padding: 100px 0 40px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+            <img src="find_mouz_icon.png" alt="Find Mouse icon">
+            Find Mouse
+        </a>
+        <a href="index.html" class="nav-back">
+            ← Back to Home
+        </a>
+    </div>
+</nav>
+
+<!-- HERO BANNER -->
+<section class="hero-banner">
+    <div class="hero-blob b1"></div>
+    <div class="hero-blob b2"></div>
+    <div class="container hero-banner-inner">
+        <div class="page-tag">Legal</div>
+        <h1 class="page-title">Privacy <span>Policy</span></h1>
+        <p class="page-subtitle">Last Updated: June 18, 2026</p>
+    </div>
+</section>
+
+<!-- CONTENT -->
+<section class="legal-body">
+    <div class="container">
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">✦</span> Overview</h2>
+            <p>We respect your privacy and are committed to protecting your information. This Privacy Policy explains how Find Mouse ("the App") collects, uses, and safeguards information when you use our application.</p>
+        </div>
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">1</span> Information We Collect</h2>
+            <p><strong>Personal Information:</strong></p>
+            <p>We do not directly collect personally identifiable information such as your name, email address, or phone number — unless you voluntarily provide it (e.g., when contacting support).</p>
+
+            <p><strong>Non-Personal Information:</strong></p>
+            <p>The App may automatically gather the following in anonymous or aggregated formats:</p>
+            <ul>
+                <li>Device specifications and operating system details</li>
+                <li>Gameplay metrics and usage statistics</li>
+                <li>Diagnostic logs and crash reports</li>
+                <li>Approximate location based on IP address</li>
+            </ul>
+
+            <p><strong>Advertising &amp; Tracking Data:</strong></p>
+            <p>Third-party advertising partners may collect the following to deliver relevant ads:</p>
+            <ul>
+                <li>Advertising ID (IDFA / GAID)</li>
+                <li>Device identifiers</li>
+                <li>Ad interaction data</li>
+            </ul>
+        </div>
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">2</span> How We Use Information</h2>
+            <p>Collected data is used to:</p>
+            <ul>
+                <li>Enhance gameplay experience and performance</li>
+                <li>Analyze app usage and fix technical issues</li>
+                <li>Display advertisements</li>
+                <li>Manage in-app purchases and subscriptions</li>
+            </ul>
+        </div>
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">3</span> Third-Party Services</h2>
+            <p>The App integrates third-party services that process data according to their own privacy policies:</p>
+            <div class="service-pills">
+                <span class="service-pill">🔥 Firebase Analytics</span>
+                <span class="service-pill">🛡️ Firebase Crashlytics</span>
+                <span class="service-pill">📢 Google AdMob</span>
+            </div>
+            <ul>
+                <li><strong>Firebase Analytics</strong> — tracks user behavior to improve the app</li>
+                <li><strong>Firebase Crashlytics</strong> — identifies and helps fix crashes</li>
+                <li><strong>Google AdMob</strong> — displays advertisements within the App</li>
+            </ul>
+        </div>
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">4</span> In-App Purchases &amp; Subscriptions</h2>
+            <p>Payments are processed securely through Apple Inc. and Google. We do not store or have access to your payment information such as credit card details.</p>
+        </div>
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">5</span> Advertising and Tracking Transparency (ATT)</h2>
+            <p>On iOS, you will receive a tracking permission request in accordance with Apple's App Tracking Transparency framework.</p>
+            <ul>
+                <li><strong>Allowing tracking</strong> — enables personalized, more relevant ads</li>
+                <li><strong>Declining</strong> — ads will still be displayed with reduced personalization</li>
+            </ul>
+        </div>
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">6</span> Children's Privacy</h2>
+            <p>Find Mouse is designed for general audiences. We do not knowingly collect personal data from users under the age of 13. If we become aware that such data has been collected, we will take steps to delete it promptly.</p>
+        </div>
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">7</span> Data Sharing</h2>
+            <p>We do not sell your personal data. We may share limited data with:</p>
+            <ul>
+                <li>Analytics providers</li>
+                <li>Advertising partners</li>
+                <li>Payment processors</li>
+            </ul>
+            <p>All sharing is limited to what is necessary to provide the App's services.</p>
+        </div>
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">8</span> Data Security</h2>
+            <p>We implement reasonable technical and organizational measures to protect your information. However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+        </div>
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">9</span> Your Rights</h2>
+            <p>Depending on your region, you may have the right to:</p>
+            <ul>
+                <li>Request access to the data we hold about you</li>
+                <li>Request deletion of your data</li>
+                <li>Opt out of personalized advertising</li>
+            </ul>
+            <p>To exercise any of these rights, please contact us using the information below.</p>
+        </div>
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">10</span> Data Retention</h2>
+            <p>Information is retained only for as long as necessary to deliver our services, comply with legal obligations, or resolve disputes.</p>
+        </div>
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">11</span> Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Updated versions will be posted within the App or on our website with a revised "Last Updated" date. Continued use of the App after any changes constitutes your acceptance of the updated policy.</p>
+        </div>
+
+        <div class="legal-card fade-in">
+            <h2><span class="section-num">12</span> Contact Us</h2>
+            <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+            <div class="contact-box">
+                <p>📧 <strong>Email:</strong> <a href="mailto:app.contact.247@gmail.com">app.contact.247@gmail.com</a></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+</body>
+</html>

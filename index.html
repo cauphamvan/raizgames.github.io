@@ -513,27 +513,88 @@ h1 .accent {
     background: rgba(255,255,255,.25);
 }
 
-/* ── LEGAL ── */
-.legal-content {
-    max-width: 860px;
+/* ── LEGAL LINKS ── */
+.legal-links-section {
+    padding: 80px 0;
+}
+
+.legal-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 680px;
     margin: auto;
 }
 
-.legal h2.section-title {
-    margin-bottom: 36px;
-}
-
-.legal h3 {
-    margin-top: 36px;
-    margin-bottom: 12px;
-    font-size: 18px;
+.legal-link-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    padding: 26px 28px;
+    text-decoration: none;
     color: var(--text);
+    transition: .25s;
+    position: relative;
+    overflow: hidden;
 }
 
-.legal p {
-    color: var(--secondary);
-    margin-bottom: 14px;
+.legal-link-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient);
+    opacity: 0;
+    transition: opacity .25s;
+    z-index: 0;
+}
+
+.legal-link-card:hover::before { opacity: .04; }
+
+.legal-link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 40px rgba(0,0,0,.09);
+    border-color: #fcd34d;
+}
+
+.legal-link-card > * { position: relative; z-index: 1; }
+
+.legal-link-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #fff7e6, #fce7f3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.legal-link-text strong {
+    display: block;
     font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.legal-link-text span {
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.legal-link-arrow {
+    margin-left: auto;
+    color: var(--secondary);
+    font-size: 18px;
+    transition: transform .2s;
+}
+
+.legal-link-card:hover .legal-link-arrow {
+    transform: translateX(4px);
+    color: var(--primary-dark);
 }
 
 /* ── FOOTER ── */
@@ -773,53 +834,29 @@ h1 .accent {
     </div>
 </section>
 
-<!-- PRIVACY POLICY -->
-<section class="section legal">
-    <div class="container legal-content">
-
-        <h2 class="section-title"><span>Privacy Policy</span></h2>
-
-        <p>
-            We respect your privacy and are committed to protecting user information.
-        </p>
-
-        <p>
-            Find Mouse may collect limited information necessary for providing
-            core functionality, improving performance, preventing abuse and complying
-            with legal obligations.
-        </p>
-
-        <p>We do not sell personal information to third parties.</p>
-
-        <p>
-            Third-party services such as analytics, advertising, crash reporting and
-            cloud infrastructure providers may process data according to their own
-            privacy policies.
-        </p>
-
-        <h3>Contact</h3>
-
-        <p>If you have questions regarding this Privacy Policy, please contact:</p>
-
-        <p>
-            Email:
-            <a class="email" href="mailto:app.contact.247@gmail.com">
-                app.contact.247@gmail.com
+<!-- LEGAL LINKS -->
+<section class="legal-links-section">
+    <div class="container">
+        <h2 class="section-title reveal">Legal <span>Information</span></h2>
+        <p class="section-subtitle reveal">Everything you need to know about how we handle your data and the rules of using Find Mouse.</p>
+        <div class="legal-links-grid">
+            <a href="privacy-policy.html" class="legal-link-card reveal">
+                <div class="legal-link-icon">🔒</div>
+                <div class="legal-link-text">
+                    <strong>Privacy Policy</strong>
+                    <span>How we collect &amp; protect your data</span>
+                </div>
+                <div class="legal-link-arrow">→</div>
             </a>
-        </p>
-
-        <h3>Terms of Use</h3>
-
-        <p>
-            By using Find Mouse, you agree to use it in accordance with
-            applicable laws and regulations.
-        </p>
-
-        <p>
-            The application is provided "as is" without warranties of any kind.
-            We reserve the right to update, modify or discontinue the service at any time.
-        </p>
-
+            <a href="terms-of-use.html" class="legal-link-card reveal reveal-delay-1">
+                <div class="legal-link-icon">📋</div>
+                <div class="legal-link-text">
+                    <strong>Terms of Use</strong>
+                    <span>Rules &amp; conditions for using the app</span>
+                </div>
+                <div class="legal-link-arrow">→</div>
+            </a>
+        </div>
     </div>
 </section>
 
