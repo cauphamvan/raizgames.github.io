@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="favicon.png">
-<title>Find Mouse – Hidden Object Puzzle Game</title>
-<meta name="description" content="Find Mouse is a relaxing hidden object puzzle game. Spot the clever little mouse in every scene, train your brain, and unwind. Free on iOS & Android.">
-<link rel="canonical" href="https://findmouse.app/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Find Mouse – Hidden Object Puzzle Game</title>
+    <meta name="description"
+        content="Find Mouse is a relaxing hidden object puzzle game. Spot the clever little mouse in every scene, train your brain, and unwind. Free on iOS & Android.">
+    <meta name="keywords"
+        content="hidden object game, find mouse, let's find out, find it out, find the cat, find mouse game, puzzle game, casual game" />
+    <link rel="canonical" href="https://findmouse.app/">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://findmouse.app/">
-<meta property="og:title" content="Find Mouse – Hidden Object Puzzle Game">
-<meta property="og:description" content="Find Mouse is a relaxing hidden object puzzle game. Spot the clever little mouse in every scene, train your brain, and unwind. Free on iOS &amp; Android.">
-<meta property="og:image" content="https://findmouse.app/find_mouz_icon.png">
-<meta property="og:image:width" content="512">
-<meta property="og:image:height" content="512">
-<meta property="og:site_name" content="Find Mouse">
-<meta property="og:locale" content="en_US">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://findmouse.app/">
+    <meta property="og:title" content="Find Mouse – Hidden Object Puzzle Game">
+    <meta property="og:description"
+        content="Find Mouse is a relaxing hidden object puzzle game. Spot the clever little mouse in every scene, train your brain, and unwind. Free on iOS &amp; Android.">
+    <meta property="og:image" content="https://findmouse.app/find_mouz_icon.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:site_name" content="Find Mouse">
+    <meta property="og:locale" content="en_US">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Find Mouse – Hidden Object Puzzle Game">
-<meta name="twitter:description" content="Find Mouse is a relaxing hidden object puzzle game. Spot the clever little mouse in every scene, train your brain, and unwind. Free on iOS &amp; Android.">
-<meta name="twitter:image" content="https://findmouse.app/find_mouz_icon.png">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Find Mouse – Hidden Object Puzzle Game">
+    <meta name="twitter:description"
+        content="Find Mouse is a relaxing hidden object puzzle game. Spot the clever little mouse in every scene, train your brain, and unwind. Free on iOS &amp; Android.">
+    <meta name="twitter:image" content="https://findmouse.app/find_mouz_icon.png">
 
-<!-- Date signals -->
-<meta name="article:modified_time" content="2026-06-18">
+    <!-- Date signals -->
+    <meta name="article:modified_time" content="2026-06-18">
 
-<!-- RSS feed -->
-<link rel="alternate" type="application/rss+xml" title="Find Mouse Updates" href="https://findmouse.app/feed.xml">
+    <!-- RSS feed -->
+    <link rel="alternate" type="application/rss+xml" title="Find Mouse Updates" href="https://findmouse.app/feed.xml">
 
-<!-- Sitemap reference -->
-<link rel="sitemap" type="application/xml" href="https://findmouse.app/sitemap.xml">
+    <!-- Sitemap reference -->
+    <link rel="sitemap" type="application/xml" href="https://findmouse.app/sitemap.xml">
 
-<!-- JSON-LD: WebSite -->
-<script type="application/ld+json">
+    <!-- JSON-LD: WebSite -->
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -54,8 +60,8 @@
 }
 </script>
 
-<!-- JSON-LD: Organization -->
-<script type="application/ld+json">
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -79,8 +85,8 @@
 }
 </script>
 
-<!-- JSON-LD: MobileApplication -->
-<script type="application/ld+json">
+    <!-- JSON-LD: MobileApplication -->
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
@@ -113,8 +119,8 @@
 }
 </script>
 
-<!-- JSON-LD: FAQPage -->
-<script type="application/ld+json">
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -171,1042 +177,1092 @@
 }
 </script>
 
-<style>
-:root {
-    --primary: #f59e0b;
-    --primary-dark: #d97706;
-    --accent: #ec4899;
-    --bg: #fffaf0;
-    --text: #1c1917;
-    --secondary: #78716c;
-    --card: #ffffff;
-    --border: #f1e7d6;
-    --gradient: linear-gradient(135deg, #f59e0b 0%, #ec4899 100%);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.7;
-    overflow-x: hidden;
-}
-
-.container {
-    width: min(1100px, 90%);
-    margin: auto;
-}
-
-/* ── REVEAL ANIMATIONS ── */
-.reveal {
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity .7s ease, transform .7s ease;
-}
-
-.reveal.in-view {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.reveal-delay-1 { transition-delay: .08s; }
-.reveal-delay-2 { transition-delay: .16s; }
-.reveal-delay-3 { transition-delay: .24s; }
-.reveal-delay-4 { transition-delay: .32s; }
-
-/* ── NAV ── */
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    padding: 18px 0;
-    background: rgba(255,250,240,0);
-    transition: background .3s, box-shadow .3s, padding .3s;
-}
-
-.nav.scrolled {
-    background: rgba(255,250,240,.85);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 20px rgba(0,0,0,.06);
-    padding: 12px 0;
-}
-
-.nav-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 800;
-    font-size: 18px;
-    text-decoration: none;
-    color: var(--text);
-}
-
-.nav-brand img {
-    width: 34px;
-    height: 34px;
-    border-radius: 9px;
-}
-
-.nav-cta {
-    text-decoration: none;
-    background: var(--gradient);
-    color: #fff;
-    padding: 10px 22px;
-    border-radius: 999px;
-    font-weight: 700;
-    font-size: 14px;
-    transition: .2s;
-    box-shadow: 0 6px 18px rgba(245,158,11,.3);
-}
-
-.nav-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 26px rgba(245,158,11,.4);
-}
-
-/* ── HERO ── */
-.hero {
-    padding: 160px 0 100px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-blob {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(60px);
-    opacity: .35;
-    z-index: 0;
-    animation: float 9s ease-in-out infinite;
-}
-
-.hero-blob.b1 {
-    width: 380px;
-    height: 380px;
-    background: #f59e0b;
-    top: -120px;
-    left: -100px;
-}
-
-.hero-blob.b2 {
-    width: 320px;
-    height: 320px;
-    background: #ec4899;
-    top: 60px;
-    right: -90px;
-    animation-delay: 2s;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-25px) scale(1.06); }
-}
-
-.hero-inner {
-    position: relative;
-    z-index: 1;
-}
-
-.app-icon-hero {
-    width: 110px;
-    height: 110px;
-    border-radius: 28px;
-    box-shadow: 0 18px 50px rgba(0,0,0,.18);
-    margin-bottom: 28px;
-    animation: pop-in .6s ease;
-}
-
-@keyframes pop-in {
-    from { opacity: 0; transform: scale(.7) translateY(20px); }
-    to { opacity: 1; transform: scale(1) translateY(0); }
-}
-
-.badge {
-    display: inline-block;
-    background: #fff7e6;
-    color: var(--primary-dark);
-    padding: 8px 18px;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: .4px;
-    text-transform: uppercase;
-    margin-bottom: 22px;
-    border: 1px solid #fde6b8;
-}
-
-h1 {
-    font-size: clamp(40px, 6.5vw, 68px);
-    line-height: 1.08;
-    font-weight: 800;
-    margin-bottom: 20px;
-    letter-spacing: -1px;
-}
-
-h1 .accent {
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.subtitle {
-    max-width: 580px;
-    margin: auto;
-    color: var(--secondary);
-    font-size: 19px;
-}
-
-.cta {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    flex-wrap: wrap;
-}
-
-/* ── STORE BUTTONS ── */
-.store-buttons {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.store-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    padding: 13px 22px;
-    border-radius: 14px;
-    font-weight: 600;
-    font-size: 14px;
-    transition: .2s;
-    border: 1.5px solid transparent;
-}
-
-.store-btn.ios {
-    background: #000;
-    color: #fff;
-}
-
-.store-btn.ios:hover {
-    background: #1a1a1a;
-    transform: translateY(-2px);
-}
-
-.store-btn.android {
-    background: #fff;
-    color: var(--text);
-    border-color: var(--border);
-}
-
-.store-btn.android:hover {
-    background: #fffaf0;
-    transform: translateY(-2px);
-}
-
-.store-btn svg {
-    flex-shrink: 0;
-}
-
-.store-btn-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-}
-
-.store-btn-text small {
-    font-size: 10px;
-    font-weight: 400;
-    opacity: .75;
-}
-
-.store-btn-text strong {
-    font-size: 14px;
-}
-
-/* ── HERO SCREENSHOT MOCKUP ── */
-.hero-mockup {
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-    gap: 22px;
-    position: relative;
-}
-
-.phone-frame {
-    width: 220px;
-    aspect-ratio: 9/19.5;
-    border-radius: 36px;
-    background: #fff;
-    border: 8px solid #1c1917;
-    box-shadow: 0 30px 60px rgba(0,0,0,.18);
-    overflow: hidden;
-}
-
-.phone-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.phone-frame.mid {
-    width: 250px;
-    transform: translateY(-16px);
-}
-
-.phone-frame.small {
-    opacity: .8;
-}
-
-/* ── SECTIONS ── */
-.section {
-    padding: 90px 0;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 18px;
-    font-size: 36px;
-    font-weight: 800;
-    letter-spacing: -.5px;
-}
-
-.section-title span {
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: var(--secondary);
-    max-width: 540px;
-    margin: 0 auto 56px;
-    font-size: 17px;
-}
-
-/* ── HOW TO PLAY ── */
-.steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 28px;
-}
-
-.step-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 22px;
-    padding: 32px 26px;
-    text-align: center;
-    transition: .25s;
-}
-
-.step-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 40px rgba(0,0,0,.07);
-}
-
-.step-num {
-    width: 48px;
-    height: 48px;
-    border-radius: 14px;
-    background: var(--gradient);
-    color: #fff;
-    font-weight: 800;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 18px;
-}
-
-.step-card h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.step-card p {
-    color: var(--secondary);
-    font-size: 15px;
-}
-
-/* ── BENEFITS ── */
-.benefits-section {
-    background: var(--card);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-}
-
-.benefits {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 26px;
-}
-
-.benefit-card {
-    padding: 10px;
-}
-
-.benefit-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 16px;
-    background: #fff7e6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 26px;
-    margin-bottom: 16px;
-}
-
-.benefit-card h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 6px;
-}
-
-.benefit-card p {
-    color: var(--secondary);
-    font-size: 15px;
-}
-
-/* ── WHY LOVE ── */
-.love-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 18px;
-}
-
-.love-item {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 22px;
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    transition: .25s;
-}
-
-.love-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 34px rgba(0,0,0,.06);
-}
-
-.love-item .check {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: var(--gradient);
-    color: #fff;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: 800;
-}
-
-.love-item p {
-    font-weight: 600;
-    font-size: 15.5px;
-}
-
-/* ── FINAL CTA ── */
-.final-cta {
-    background: var(--gradient);
-    text-align: center;
-    border-radius: 32px;
-    padding: 70px 40px;
-    color: #fff;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.final-cta h2 {
-    font-size: clamp(28px, 4vw, 40px);
-    font-weight: 800;
-    margin-bottom: 14px;
-}
-
-.final-cta p {
-    color: rgba(255,255,255,.85);
-    max-width: 460px;
-    margin: 0 auto 36px;
-    font-size: 17px;
-}
-
-.final-cta .store-btn.ios {
-    background: #fff;
-    color: #000;
-}
-
-.final-cta .store-btn.android {
-    background: rgba(255,255,255,.15);
-    color: #fff;
-    border-color: rgba(255,255,255,.4);
-}
-
-.final-cta .store-btn.android:hover {
-    background: rgba(255,255,255,.25);
-}
-
-/* ── LEGAL LINKS ── */
-.legal-links-section {
-    padding: 80px 0;
-}
-
-.legal-links-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-    max-width: 680px;
-    margin: auto;
-}
-
-.legal-link-card {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    background: var(--card);
-    border: 1.5px solid var(--border);
-    border-radius: 20px;
-    padding: 26px 28px;
-    text-decoration: none;
-    color: var(--text);
-    transition: .25s;
-    position: relative;
-    overflow: hidden;
-}
-
-.legal-link-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: var(--gradient);
-    opacity: 0;
-    transition: opacity .25s;
-    z-index: 0;
-}
-
-.legal-link-card:hover::before { opacity: .04; }
-
-.legal-link-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 16px 40px rgba(0,0,0,.09);
-    border-color: #fcd34d;
-}
-
-.legal-link-card > * { position: relative; z-index: 1; }
-
-.legal-link-icon {
-    width: 52px;
-    height: 52px;
-    border-radius: 14px;
-    background: linear-gradient(135deg, #fff7e6, #fce7f3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    flex-shrink: 0;
-}
-
-.legal-link-text strong {
-    display: block;
-    font-size: 16px;
-    font-weight: 800;
-    margin-bottom: 4px;
-}
-
-.legal-link-text span {
-    font-size: 13px;
-    color: var(--secondary);
-}
-
-.legal-link-arrow {
-    margin-left: auto;
-    color: var(--secondary);
-    font-size: 18px;
-    transition: transform .2s;
-}
-
-.legal-link-card:hover .legal-link-arrow {
-    transform: translateX(4px);
-    color: var(--primary-dark);
-}
-
-/* ── FAQ ── */
-.faq-list {
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.faq-item {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    margin-bottom: 12px;
-    overflow: hidden;
-}
-
-.faq-q {
-    width: 100%;
-    background: none;
-    border: none;
-    padding: 20px 24px;
-    text-align: left;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    color: var(--text);
-    font-family: inherit;
-    transition: background .2s;
-}
-
-.faq-q:hover { background: #fff7e6; }
-
-.faq-icon {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: var(--gradient);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 800;
-    transition: transform .3s;
-}
-
-.faq-item.open .faq-icon { transform: rotate(45deg); }
-
-.faq-a {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .35s ease, padding .35s ease;
-    padding: 0 24px;
-    color: var(--secondary);
-    font-size: 15px;
-}
-
-.faq-item.open .faq-a {
-    max-height: 200px;
-    padding: 0 24px 20px;
-}
-
-/* ── FOOTER ── */
-.footer {
-    background: var(--text);
-    color: rgba(255,255,255,.5);
-    text-align: center;
-    padding: 48px 20px;
-    font-size: 15px;
-}
-
-.footer a.email {
-    color: #fbbf24;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.footer a.email:hover {
-    color: #fcd34d;
-}
-
-.footer-logo {
-    font-size: 22px;
-    font-weight: 800;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 600px) {
-    .hero {
-        padding: 130px 0 70px;
-    }
-
-    .hero-mockup {
-        flex-wrap: wrap;
-    }
-
-    .phone-frame.mid {
-        transform: none;
-    }
-
-    .nav-cta {
-        display: none;
-    }
-
-    .store-buttons {
-        flex-direction: column;
-    }
-
-    .store-btn {
-        justify-content: center;
-    }
-
-    .final-cta {
-        padding: 50px 24px;
-        border-radius: 24px;
-    }
-}
-</style>
+    <style>
+        :root {
+            --primary: #f59e0b;
+            --primary-dark: #d97706;
+            --accent: #ec4899;
+            --bg: #fffaf0;
+            --text: #1c1917;
+            --secondary: #78716c;
+            --card: #ffffff;
+            --border: #f1e7d6;
+            --gradient: linear-gradient(135deg, #f59e0b 0%, #ec4899 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: min(1100px, 90%);
+            margin: auto;
+        }
+
+        /* ── REVEAL ANIMATIONS ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity .7s ease, transform .7s ease;
+        }
+
+        .reveal.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 {
+            transition-delay: .08s;
+        }
+
+        .reveal-delay-2 {
+            transition-delay: .16s;
+        }
+
+        .reveal-delay-3 {
+            transition-delay: .24s;
+        }
+
+        .reveal-delay-4 {
+            transition-delay: .32s;
+        }
+
+        /* ── NAV ── */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 18px 0;
+            background: rgba(255, 250, 240, 0);
+            transition: background .3s, box-shadow .3s, padding .3s;
+        }
+
+        .nav.scrolled {
+            background: rgba(255, 250, 240, .85);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, .06);
+            padding: 12px 0;
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            font-size: 18px;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        .nav-brand img {
+            width: 34px;
+            height: 34px;
+            border-radius: 9px;
+        }
+
+        .nav-cta {
+            text-decoration: none;
+            background: var(--gradient);
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 14px;
+            transition: .2s;
+            box-shadow: 0 6px 18px rgba(245, 158, 11, .3);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 26px rgba(245, 158, 11, .4);
+        }
+
+        /* ── HERO ── */
+        .hero {
+            padding: 160px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: .35;
+            z-index: 0;
+            animation: float 9s ease-in-out infinite;
+        }
+
+        .hero-blob.b1 {
+            width: 380px;
+            height: 380px;
+            background: #f59e0b;
+            top: -120px;
+            left: -100px;
+        }
+
+        .hero-blob.b2 {
+            width: 320px;
+            height: 320px;
+            background: #ec4899;
+            top: 60px;
+            right: -90px;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+            }
+
+            50% {
+                transform: translateY(-25px) scale(1.06);
+            }
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 1;
+        }
+
+        .app-icon-hero {
+            width: 110px;
+            height: 110px;
+            border-radius: 28px;
+            box-shadow: 0 18px 50px rgba(0, 0, 0, .18);
+            margin-bottom: 28px;
+            animation: pop-in .6s ease;
+        }
+
+        @keyframes pop-in {
+            from {
+                opacity: 0;
+                transform: scale(.7) translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            background: #fff7e6;
+            color: var(--primary-dark);
+            padding: 8px 18px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .4px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+            border: 1px solid #fde6b8;
+        }
+
+        h1 {
+            font-size: clamp(40px, 6.5vw, 68px);
+            line-height: 1.08;
+            font-weight: 800;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        h1 .accent {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            max-width: 580px;
+            margin: auto;
+            color: var(--secondary);
+            font-size: 19px;
+        }
+
+        .cta {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        /* ── STORE BUTTONS ── */
+        .store-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .store-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            padding: 13px 22px;
+            border-radius: 14px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: .2s;
+            border: 1.5px solid transparent;
+        }
+
+        .store-btn.ios {
+            background: #000;
+            color: #fff;
+        }
+
+        .store-btn.ios:hover {
+            background: #1a1a1a;
+            transform: translateY(-2px);
+        }
+
+        .store-btn.android {
+            background: #fff;
+            color: var(--text);
+            border-color: var(--border);
+        }
+
+        .store-btn.android:hover {
+            background: #fffaf0;
+            transform: translateY(-2px);
+        }
+
+        .store-btn svg {
+            flex-shrink: 0;
+        }
+
+        .store-btn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+
+        .store-btn-text small {
+            font-size: 10px;
+            font-weight: 400;
+            opacity: .75;
+        }
+
+        .store-btn-text strong {
+            font-size: 14px;
+        }
+
+        /* ── HERO SCREENSHOT MOCKUP ── */
+        .hero-mockup {
+            margin-top: 70px;
+            display: flex;
+            justify-content: center;
+            gap: 22px;
+            position: relative;
+        }
+
+        .phone-frame {
+            width: 220px;
+            aspect-ratio: 9/19.5;
+            border-radius: 36px;
+            background: #fff;
+            border: 8px solid #1c1917;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, .18);
+            overflow: hidden;
+        }
+
+        .phone-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .phone-frame.mid {
+            width: 250px;
+            transform: translateY(-16px);
+        }
+
+        .phone-frame.small {
+            opacity: .8;
+        }
+
+        /* ── SECTIONS ── */
+        .section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 18px;
+            font-size: 36px;
+            font-weight: 800;
+            letter-spacing: -.5px;
+        }
+
+        .section-title span {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--secondary);
+            max-width: 540px;
+            margin: 0 auto 56px;
+            font-size: 17px;
+        }
+
+        /* ── HOW TO PLAY ── */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 28px;
+        }
+
+        .step-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            padding: 32px 26px;
+            text-align: center;
+            transition: .25s;
+        }
+
+        .step-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, .07);
+        }
+
+        .step-num {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: var(--gradient);
+            color: #fff;
+            font-weight: 800;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+        }
+
+        .step-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .step-card p {
+            color: var(--secondary);
+            font-size: 15px;
+        }
+
+        /* ── BENEFITS ── */
+        .benefits-section {
+            background: var(--card);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 26px;
+        }
+
+        .benefit-card {
+            padding: 10px;
+        }
+
+        .benefit-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            background: #fff7e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            margin-bottom: 16px;
+        }
+
+        .benefit-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .benefit-card p {
+            color: var(--secondary);
+            font-size: 15px;
+        }
+
+        /* ── WHY LOVE ── */
+        .love-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .love-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 22px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            transition: .25s;
+        }
+
+        .love-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 34px rgba(0, 0, 0, .06);
+        }
+
+        .love-item .check {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: var(--gradient);
+            color: #fff;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .love-item p {
+            font-weight: 600;
+            font-size: 15.5px;
+        }
+
+        /* ── FINAL CTA ── */
+        .final-cta {
+            background: var(--gradient);
+            text-align: center;
+            border-radius: 32px;
+            padding: 70px 40px;
+            color: #fff;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+
+        .final-cta p {
+            color: rgba(255, 255, 255, .85);
+            max-width: 460px;
+            margin: 0 auto 36px;
+            font-size: 17px;
+        }
+
+        .final-cta .store-btn.ios {
+            background: #fff;
+            color: #000;
+        }
+
+        .final-cta .store-btn.android {
+            background: rgba(255, 255, 255, .15);
+            color: #fff;
+            border-color: rgba(255, 255, 255, .4);
+        }
+
+        .final-cta .store-btn.android:hover {
+            background: rgba(255, 255, 255, .25);
+        }
+
+        /* ── LEGAL LINKS ── */
+        .legal-links-section {
+            padding: 80px 0;
+        }
+
+        .legal-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            max-width: 680px;
+            margin: auto;
+        }
+
+        .legal-link-card {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            background: var(--card);
+            border: 1.5px solid var(--border);
+            border-radius: 20px;
+            padding: 26px 28px;
+            text-decoration: none;
+            color: var(--text);
+            transition: .25s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .legal-link-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--gradient);
+            opacity: 0;
+            transition: opacity .25s;
+            z-index: 0;
+        }
+
+        .legal-link-card:hover::before {
+            opacity: .04;
+        }
+
+        .legal-link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, .09);
+            border-color: #fcd34d;
+        }
+
+        .legal-link-card>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        .legal-link-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #fff7e6, #fce7f3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .legal-link-text strong {
+            display: block;
+            font-size: 16px;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .legal-link-text span {
+            font-size: 13px;
+            color: var(--secondary);
+        }
+
+        .legal-link-arrow {
+            margin-left: auto;
+            color: var(--secondary);
+            font-size: 18px;
+            transition: transform .2s;
+        }
+
+        .legal-link-card:hover .legal-link-arrow {
+            transform: translateX(4px);
+            color: var(--primary-dark);
+        }
+
+        /* ── FAQ ── */
+        .faq-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .faq-q {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 20px 24px;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            color: var(--text);
+            font-family: inherit;
+            transition: background .2s;
+        }
+
+        .faq-q:hover {
+            background: #fff7e6;
+        }
+
+        .faq-icon {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--gradient);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 800;
+            transition: transform .3s;
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .35s ease, padding .35s ease;
+            padding: 0 24px;
+            color: var(--secondary);
+            font-size: 15px;
+        }
+
+        .faq-item.open .faq-a {
+            max-height: 200px;
+            padding: 0 24px 20px;
+        }
+
+        /* ── FOOTER ── */
+        .footer {
+            background: var(--text);
+            color: rgba(255, 255, 255, .5);
+            text-align: center;
+            padding: 48px 20px;
+            font-size: 15px;
+        }
+
+        .footer a.email {
+            color: #fbbf24;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a.email:hover {
+            color: #fcd34d;
+        }
+
+        .footer-logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 130px 0 70px;
+            }
+
+            .hero-mockup {
+                flex-wrap: wrap;
+            }
+
+            .phone-frame.mid {
+                transform: none;
+            }
+
+            .nav-cta {
+                display: none;
+            }
+
+            .store-buttons {
+                flex-direction: column;
+            }
+
+            .store-btn {
+                justify-content: center;
+            }
+
+            .final-cta {
+                padding: 50px 24px;
+                border-radius: 24px;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav class="nav" id="nav">
-    <div class="container nav-inner">
-        <a href="/" class="nav-brand">
-            <img src="find_mouz_icon.png" alt="Find Mouse app icon">
-            Find Mouse
-        </a>
-        <div style="display:flex;align-items:center;gap:14px;">
-            <a href="about.html" style="text-decoration:none;color:var(--secondary);font-weight:600;font-size:14px;display:none;" class="nav-about-link">About</a>
-            <a href="#download" class="nav-cta">Play Free</a>
-        </div>
-    </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-blob b1"></div>
-    <div class="hero-blob b2"></div>
-    <div class="container hero-inner">
-        <img src="find_mouz_icon.png" alt="Find Mouse icon" class="app-icon-hero">
-        <div class="badge">Hidden Object Puzzle Game</div>
-        <h1>Can you spot the<br><span class="accent">clever little mouse?</span></h1>
-        <p class="subtitle">
-            A fun and relaxing hidden object game. Look carefully, tap the mouse,
-            and unwind through hundreds of beautifully crafted scenes.
-        </p>
-        <div class="cta">
-            <div class="store-buttons" id="download">
-                <a href="https://apps.apple.com/app/id6764365707"
-                   target="_blank" rel="noopener" class="store-btn ios">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                    </svg>
-                    <div class="store-btn-text">
-                        <small>Download on the</small>
-                        <strong>App Store</strong>
-                    </div>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.caupv.find.mouz"
-                   target="_blank" rel="noopener" class="store-btn android">
-                    <img src="icon_google_play.svg" alt="Google Play" width="20" height="20">
-                    <div class="store-btn-text">
-                        <small>Get it on</small>
-                        <strong>Google Play</strong>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div class="hero-mockup">
-            <div class="phone-frame small reveal">
-                <img src="screenshot-1.png" alt="Find Mouse gameplay screenshot 1">
-            </div>
-            <div class="phone-frame mid reveal reveal-delay-1">
-                <img src="screenshot-2.png" alt="Find Mouse gameplay screenshot 2">
-            </div>
-            <div class="phone-frame small reveal reveal-delay-2">
-                <img src="screenshot-3.png" alt="Find Mouse gameplay screenshot 3">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- HOW TO PLAY -->
-<section class="section" id="how-it-works">
-    <div class="container">
-        <h2 class="section-title reveal">Simple to Play, <span>Hard to Master</span></h2>
-        <p class="section-subtitle reveal">
-            Each level is carefully designed to make the search fun and satisfying.
-        </p>
-
-        <div class="steps">
-            <div class="step-card reveal">
-                <div class="step-num">1</div>
-                <h3>Look Carefully</h3>
-                <p>Scan each beautifully illustrated scene for clues.</p>
-            </div>
-            <div class="step-card reveal reveal-delay-1">
-                <div class="step-num">2</div>
-                <h3>Tap the Mouse</h3>
-                <p>Found it? Tap on the mouse the moment you spot it.</p>
-            </div>
-            <div class="step-card reveal reveal-delay-2">
-                <div class="step-num">3</div>
-                <h3>Level Up</h3>
-                <p>Progress through increasingly challenging levels.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- BRAIN TRAINING -->
-<section class="section benefits-section">
-    <div class="container">
-        <h2 class="section-title reveal">Train Your <span>Brain</span></h2>
-        <p class="section-subtitle reveal">
-            Find Mouse is more than just a game — it's a mental workout.
-        </p>
-
-        <div class="benefits">
-            <div class="benefit-card reveal">
-                <div class="benefit-icon">🔎</div>
-                <h3>Observation Skills</h3>
-                <p>Sharpen your eye for detail with every scene you search.</p>
-            </div>
-            <div class="benefit-card reveal reveal-delay-1">
-                <div class="benefit-icon">🎯</div>
-                <h3>Focus & Attention</h3>
-                <p>Stay present and boost concentration the fun way.</p>
-            </div>
-            <div class="benefit-card reveal reveal-delay-2">
-                <div class="benefit-icon">🧠</div>
-                <h3>Visual Memory</h3>
-                <p>Train your brain to remember patterns and details.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- WHY YOU'LL LOVE IT -->
-<section class="section">
-    <div class="container">
-        <h2 class="section-title reveal">Why You'll <span>Love Find Mouse</span></h2>
-        <p class="section-subtitle reveal">
-            The perfect balance of challenge and relaxation.
-        </p>
-
-        <div class="love-grid">
-            <div class="love-item reveal">
-                <div class="check">✓</div>
-                <p>Easy to start, hard to put down</p>
-            </div>
-            <div class="love-item reveal reveal-delay-1">
-                <div class="check">✓</div>
-                <p>Great for all ages</p>
-            </div>
-            <div class="love-item reveal reveal-delay-2">
-                <div class="check">✓</div>
-                <p>Fun, casual, and addictive</p>
-            </div>
-            <div class="love-item reveal reveal-delay-3">
-                <div class="check">✓</div>
-                <p>Perfect balance of challenge and relaxation</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="section">
-    <div class="container">
-        <div class="final-cta reveal">
-            <h2>Ready to find the mouse?</h2>
-            <p>Download Find Mouse free today and start your relaxing puzzle adventure.</p>
-            <div class="store-buttons">
-                <a href="https://apps.apple.com/app/id6764365707"
-                   target="_blank" rel="noopener" class="store-btn ios">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                    </svg>
-                    <div class="store-btn-text">
-                        <small>Download on the</small>
-                        <strong>App Store</strong>
-                    </div>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.caupv.find.mouz"
-                   target="_blank" rel="noopener" class="store-btn android">
-                    <img src="icon_google_play.svg" alt="Google Play" width="20" height="20">
-                    <div class="store-btn-text">
-                        <small>Get it on</small>
-                        <strong>Google Play</strong>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ -->
-<section class="section" id="faq">
-    <div class="container">
-        <h2 class="section-title reveal">Frequently Asked <span>Questions</span></h2>
-        <p class="section-subtitle reveal">
-            Everything you need to know about Find Mouse.
-        </p>
-        <div class="faq-list reveal">
-            <div class="faq-item">
-                <button class="faq-q" aria-expanded="false">
-                    What is Find Mouse?
-                    <span class="faq-icon" aria-hidden="true">+</span>
-                </button>
-                <div class="faq-a">Find Mouse is a hidden object puzzle mobile game where you scan beautifully illustrated scenes to spot a small mouse hidden in each level. It features 100+ progressively challenging scenes and is free to play on iOS and Android.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" aria-expanded="false">
-                    Is Find Mouse free to play?
-                    <span class="faq-icon" aria-hidden="true">+</span>
-                </button>
-                <div class="faq-a">Yes — Find Mouse is completely free to download and play on both iOS (Apple App Store) and Android (Google Play). No subscription, no hidden fees.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" aria-expanded="false">
-                    What devices support Find Mouse?
-                    <span class="faq-icon" aria-hidden="true">+</span>
-                </button>
-                <div class="faq-a">Find Mouse is available on iOS devices (iPhone and iPad) via the Apple App Store, and on Android phones and tablets via Google Play.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" aria-expanded="false">
-                    Is Find Mouse suitable for children?
-                    <span class="faq-icon" aria-hidden="true">+</span>
-                </button>
-                <div class="faq-a">Absolutely. Find Mouse is designed for all ages. Its relaxing, non-violent hidden object gameplay is enjoyable for children, adults, and seniors alike.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" aria-expanded="false">
-                    How many levels does Find Mouse have?
-                    <span class="faq-icon" aria-hidden="true">+</span>
-                </button>
-                <div class="faq-a">Find Mouse features over 100 uniquely illustrated scenes, with new levels added regularly. Difficulty increases as you progress — from easy cozy rooms to complex, busy scenes.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" aria-expanded="false">
-                    Who made Find Mouse?
-                    <span class="faq-icon" aria-hidden="true">+</span>
-                </button>
-                <div class="faq-a">Find Mouse was created by Raiz Games, an indie mobile game studio passionate about crafting relaxing, beautifully illustrated puzzle games for everyone.</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- LEGAL LINKS -->
-<section class="legal-links-section">
-    <div class="container">
-        <h2 class="section-title reveal">More <span>Information</span></h2>
-        <p class="section-subtitle reveal">Learn about the game, our studio, and how we handle your data.</p>
-        <div class="legal-links-grid" style="max-width:900px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">
-            <a href="about.html" class="legal-link-card reveal">
-                <div class="legal-link-icon">🎮</div>
-                <div class="legal-link-text">
-                    <strong>About Find Mouse</strong>
-                    <span>Our game, our studio, our story</span>
-                </div>
-                <div class="legal-link-arrow">→</div>
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="/" class="nav-brand">
+                <img src="find_mouz_icon.png" alt="Find Mouse app icon">
+                Find Mouse
             </a>
-            <a href="privacy-policy.html" class="legal-link-card reveal reveal-delay-1">
-                <div class="legal-link-icon">🔒</div>
-                <div class="legal-link-text">
-                    <strong>Privacy Policy</strong>
-                    <span>How we collect &amp; protect your data</span>
-                </div>
-                <div class="legal-link-arrow">→</div>
-            </a>
-            <a href="terms-of-use.html" class="legal-link-card reveal reveal-delay-2">
-                <div class="legal-link-icon">📋</div>
-                <div class="legal-link-text">
-                    <strong>Terms of Use</strong>
-                    <span>Rules &amp; conditions for using the app</span>
-                </div>
-                <div class="legal-link-arrow">→</div>
-            </a>
+            <div style="display:flex;align-items:center;gap:14px;">
+                <a href="about.html"
+                    style="text-decoration:none;color:var(--secondary);font-weight:600;font-size:14px;display:none;"
+                    class="nav-about-link">About</a>
+                <a href="#download" class="nav-cta">Play Free</a>
+            </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-logo">Find Mouse</div>
-    <p>by <strong style="color:rgba(255,255,255,.7)">Raiz Games</strong> &middot; © 2026 All rights reserved.</p>
-    <p style="margin-top:8px">
-        <a href="mailto:app.contact.247@gmail.com" class="email">app.contact.247@gmail.com</a>
-    </p>
-    <p style="margin-top:16px; font-size:13px;">
-        <a href="about.html" style="color:rgba(255,255,255,.4); text-decoration:none; margin: 0 8px;">About</a>
-        <a href="privacy-policy.html" style="color:rgba(255,255,255,.4); text-decoration:none; margin: 0 8px;">Privacy Policy</a>
-        <a href="terms-of-use.html" style="color:rgba(255,255,255,.4); text-decoration:none; margin: 0 8px;">Terms of Use</a>
-    </p>
-</footer>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-blob b1"></div>
+        <div class="hero-blob b2"></div>
+        <div class="container hero-inner">
+            <img src="find_mouz_icon.png" alt="Find Mouse icon" class="app-icon-hero">
+            <div class="badge">Hidden Object Puzzle Game</div>
+            <h1>Can you spot the<br><span class="accent">clever little mouse?</span></h1>
+            <p class="subtitle">
+                A fun and relaxing hidden object game. Look carefully, tap the mouse,
+                and unwind through hundreds of beautifully crafted scenes.
+            </p>
+            <div class="cta">
+                <div class="store-buttons" id="download">
+                    <a href="https://apps.apple.com/app/id6764365707" target="_blank" rel="noopener"
+                        class="store-btn ios">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                        </svg>
+                        <div class="store-btn-text">
+                            <small>Download on the</small>
+                            <strong>App Store</strong>
+                        </div>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.caupv.find.mouz" target="_blank"
+                        rel="noopener" class="store-btn android">
+                        <img src="icon_google_play.svg" alt="Google Play" width="20" height="20">
+                        <div class="store-btn-text">
+                            <small>Get it on</small>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
-<script>
-// Nav background on scroll + show About link
-const nav = document.getElementById('nav');
-const navAbout = document.querySelector('.nav-about-link');
-window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY > 20;
-    nav.classList.toggle('scrolled', scrolled);
-    if (navAbout) navAbout.style.display = scrolled ? 'block' : 'none';
-});
+            <div class="hero-mockup">
+                <div class="phone-frame small reveal">
+                    <img src="screenshot-1.png" alt="Find Mouse gameplay screenshot 1">
+                </div>
+                <div class="phone-frame mid reveal reveal-delay-1">
+                    <img src="screenshot-2.png" alt="Find Mouse gameplay screenshot 2">
+                </div>
+                <div class="phone-frame small reveal reveal-delay-2">
+                    <img src="screenshot-3.png" alt="Find Mouse gameplay screenshot 3">
+                </div>
+            </div>
+        </div>
+    </section>
 
-// FAQ accordion
-document.querySelectorAll('.faq-q').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const item = btn.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item.open').forEach(el => {
-            el.classList.remove('open');
-            el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+    <!-- HOW TO PLAY -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title reveal">Simple to Play, <span>Hard to Master</span></h2>
+            <p class="section-subtitle reveal">
+                Each level is carefully designed to make the search fun and satisfying.
+            </p>
+
+            <div class="steps">
+                <div class="step-card reveal">
+                    <div class="step-num">1</div>
+                    <h3>Look Carefully</h3>
+                    <p>Scan each beautifully illustrated scene for clues.</p>
+                </div>
+                <div class="step-card reveal reveal-delay-1">
+                    <div class="step-num">2</div>
+                    <h3>Tap the Mouse</h3>
+                    <p>Found it? Tap on the mouse the moment you spot it.</p>
+                </div>
+                <div class="step-card reveal reveal-delay-2">
+                    <div class="step-num">3</div>
+                    <h3>Level Up</h3>
+                    <p>Progress through increasingly challenging levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAIN TRAINING -->
+    <section class="section benefits-section">
+        <div class="container">
+            <h2 class="section-title reveal">Train Your <span>Brain</span></h2>
+            <p class="section-subtitle reveal">
+                Find Mouse is more than just a game — it's a mental workout.
+            </p>
+
+            <div class="benefits">
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon">🔎</div>
+                    <h3>Observation Skills</h3>
+                    <p>Sharpen your eye for detail with every scene you search.</p>
+                </div>
+                <div class="benefit-card reveal reveal-delay-1">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Focus & Attention</h3>
+                    <p>Stay present and boost concentration the fun way.</p>
+                </div>
+                <div class="benefit-card reveal reveal-delay-2">
+                    <div class="benefit-icon">🧠</div>
+                    <h3>Visual Memory</h3>
+                    <p>Train your brain to remember patterns and details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY YOU'LL LOVE IT -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Why You'll <span>Love Find Mouse</span></h2>
+            <p class="section-subtitle reveal">
+                The perfect balance of challenge and relaxation.
+            </p>
+
+            <div class="love-grid">
+                <div class="love-item reveal">
+                    <div class="check">✓</div>
+                    <p>Easy to start, hard to put down</p>
+                </div>
+                <div class="love-item reveal reveal-delay-1">
+                    <div class="check">✓</div>
+                    <p>Great for all ages</p>
+                </div>
+                <div class="love-item reveal reveal-delay-2">
+                    <div class="check">✓</div>
+                    <p>Fun, casual, and addictive</p>
+                </div>
+                <div class="love-item reveal reveal-delay-3">
+                    <div class="check">✓</div>
+                    <p>Perfect balance of challenge and relaxation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="final-cta reveal">
+                <h2>Ready to find the mouse?</h2>
+                <p>Download Find Mouse free today and start your relaxing puzzle adventure.</p>
+                <div class="store-buttons">
+                    <a href="https://apps.apple.com/app/id6764365707" target="_blank" rel="noopener"
+                        class="store-btn ios">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                        </svg>
+                        <div class="store-btn-text">
+                            <small>Download on the</small>
+                            <strong>App Store</strong>
+                        </div>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.caupv.find.mouz" target="_blank"
+                        rel="noopener" class="store-btn android">
+                        <img src="icon_google_play.svg" alt="Google Play" width="20" height="20">
+                        <div class="store-btn-text">
+                            <small>Get it on</small>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <div class="container">
+            <h2 class="section-title reveal">Frequently Asked <span>Questions</span></h2>
+            <p class="section-subtitle reveal">
+                Everything you need to know about Find Mouse.
+            </p>
+            <div class="faq-list reveal">
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        What is Find Mouse?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-a">Find Mouse is a hidden object puzzle mobile game where you scan beautifully
+                        illustrated scenes to spot a small mouse hidden in each level. It features 100+ progressively
+                        challenging scenes and is free to play on iOS and Android.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        Is Find Mouse free to play?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-a">Yes — Find Mouse is completely free to download and play on both iOS (Apple App
+                        Store) and Android (Google Play). No subscription, no hidden fees.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        What devices support Find Mouse?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-a">Find Mouse is available on iOS devices (iPhone and iPad) via the Apple App Store,
+                        and on Android phones and tablets via Google Play.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        Is Find Mouse suitable for children?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-a">Absolutely. Find Mouse is designed for all ages. Its relaxing, non-violent hidden
+                        object gameplay is enjoyable for children, adults, and seniors alike.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        How many levels does Find Mouse have?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-a">Find Mouse features over 100 uniquely illustrated scenes, with new levels added
+                        regularly. Difficulty increases as you progress — from easy cozy rooms to complex, busy scenes.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        Who made Find Mouse?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-a">Find Mouse was created by Raiz Games, an indie mobile game studio passionate
+                        about crafting relaxing, beautifully illustrated puzzle games for everyone.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEGAL LINKS -->
+    <section class="legal-links-section">
+        <div class="container">
+            <h2 class="section-title reveal">More <span>Information</span></h2>
+            <p class="section-subtitle reveal">Learn about the game, our studio, and how we handle your data.</p>
+            <div class="legal-links-grid"
+                style="max-width:900px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">
+                <a href="about.html" class="legal-link-card reveal">
+                    <div class="legal-link-icon">🎮</div>
+                    <div class="legal-link-text">
+                        <strong>About Find Mouse</strong>
+                        <span>Our game, our studio, our story</span>
+                    </div>
+                    <div class="legal-link-arrow">→</div>
+                </a>
+                <a href="privacy-policy.html" class="legal-link-card reveal reveal-delay-1">
+                    <div class="legal-link-icon">🔒</div>
+                    <div class="legal-link-text">
+                        <strong>Privacy Policy</strong>
+                        <span>How we collect &amp; protect your data</span>
+                    </div>
+                    <div class="legal-link-arrow">→</div>
+                </a>
+                <a href="terms-of-use.html" class="legal-link-card reveal reveal-delay-2">
+                    <div class="legal-link-icon">📋</div>
+                    <div class="legal-link-text">
+                        <strong>Terms of Use</strong>
+                        <span>Rules &amp; conditions for using the app</span>
+                    </div>
+                    <div class="legal-link-arrow">→</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-logo">Find Mouse</div>
+        <p>by <strong style="color:rgba(255,255,255,.7)">Raiz Games</strong> &middot; © 2026 All rights reserved.</p>
+        <p style="margin-top:8px">
+            <a href="mailto:app.contact.247@gmail.com" class="email">app.contact.247@gmail.com</a>
+        </p>
+        <p style="margin-top:16px; font-size:13px;">
+            <a href="about.html" style="color:rgba(255,255,255,.4); text-decoration:none; margin: 0 8px;">About</a>
+            <a href="privacy-policy.html"
+                style="color:rgba(255,255,255,.4); text-decoration:none; margin: 0 8px;">Privacy Policy</a>
+            <a href="terms-of-use.html" style="color:rgba(255,255,255,.4); text-decoration:none; margin: 0 8px;">Terms
+                of Use</a>
+        </p>
+    </footer>
+
+    <script>
+        // Nav background on scroll + show About link
+        const nav = document.getElementById('nav');
+        const navAbout = document.querySelector('.nav-about-link');
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY > 20;
+            nav.classList.toggle('scrolled', scrolled);
+            if (navAbout) navAbout.style.display = scrolled ? 'block' : 'none';
         });
-        if (!isOpen) {
-            item.classList.add('open');
-            btn.setAttribute('aria-expanded', 'true');
-        }
-    });
-});
 
-// Scroll reveal animations
-const revealEls = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
-            observer.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.15 });
+        // FAQ accordion
+        document.querySelectorAll('.faq-q').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.faq-item');
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item.open').forEach(el => {
+                    el.classList.remove('open');
+                    el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+                });
+                if (!isOpen) {
+                    item.classList.add('open');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
 
-revealEls.forEach(el => observer.observe(el));
-</script>
+        // Scroll reveal animations
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        revealEls.forEach(el => observer.observe(el));
+    </script>
 
 </body>
+
 </html>
