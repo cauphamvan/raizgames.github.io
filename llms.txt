@@ -1,0 +1,39 @@
+# Find Mouse — AI Index
+> Find Mouse is a relaxing hidden object puzzle mobile game by Raiz Games. Players search beautifully illustrated scenes to find a cleverly hidden mouse. Free on iOS and Android.
+
+## About Find Mouse
+Find Mouse is a hidden object puzzle game where players scan detailed illustrated scenes to spot a small mouse hidden somewhere in each level. The game trains observation skills, focus, and visual memory through hundreds of progressively challenging scenes. It is designed for all ages and is completely free to play.
+
+## Key Facts
+- Genre: Hidden Object Puzzle / Brain Training
+- Developer: Raiz Games
+- Platforms: iOS (iPhone & iPad), Android
+- Price: Free
+- Number of scenes: 100+ unique illustrated levels
+- Suitable for: All ages (children and adults)
+- Languages: English
+
+## Features
+- Hundreds of unique hidden object puzzle scenes
+- Progressive difficulty: scenes grow more complex as players advance
+- Brain training benefits: improves observation skills, focus, and visual memory
+- Relaxing, stress-free gameplay with no time pressure
+- Clean, beautiful illustrations in every level
+- No account required — play instantly
+
+## Developer
+**Raiz Games** — indie mobile game developer
+- Email: app.contact.247@gmail.com
+- Website: https://findmouse.app
+
+## Download Links
+- iOS App Store: https://apps.apple.com/app/id6764365707
+- Google Play: https://play.google.com/store/apps/details?id=com.caupv.find.mouz
+
+## Pages
+- Homepage: https://findmouse.app/
+- About: https://findmouse.app/about.html
+- Privacy Policy: https://findmouse.app/privacy-policy.html
+- Terms of Use: https://findmouse.app/terms-of-use.html
+- AI Summary: https://findmouse.app/ai/summary.json
+- AI FAQ: https://findmouse.app/ai/faq.json

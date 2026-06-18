@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Find Mouse – Updates</title>
+    <link>https://findmouse.app/</link>
+    <description>Latest news and updates from Find Mouse, the hidden object puzzle game by Raiz Games.</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://findmouse.app/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Find Mouse is now available on iOS and Android</title>
+      <link>https://findmouse.app/</link>
+      <description>Find Mouse — the relaxing hidden object puzzle game by Raiz Games — is now free to download on the Apple App Store and Google Play. Spot the clever little mouse in 100+ beautifully illustrated scenes.</description>
+      <pubDate>Wed, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://findmouse.app/#launch-2026</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>About – Find Mouse by Raiz Games</title>
+<meta name="description" content="Learn about Find Mouse — a relaxing hidden object puzzle game by Raiz Games — and meet the indie team behind it. Free on iOS &amp; Android.">
+<link rel="canonical" href="https://findmouse.app/about.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://findmouse.app/about.html">
+<meta property="og:title" content="About – Find Mouse by Raiz Games">
+<meta property="og:description" content="Learn about Find Mouse — a relaxing hidden object puzzle game — and the indie studio Raiz Games behind it.">
+<meta property="og:image" content="https://findmouse.app/find_mouz_icon.png">
+<meta property="og:site_name" content="Find Mouse">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="About – Find Mouse by Raiz Games">
+<meta name="twitter:description" content="Learn about Find Mouse — a relaxing hidden object puzzle game — and the indie studio Raiz Games behind it.">
+<meta name="twitter:image" content="https://findmouse.app/find_mouz_icon.png">
+
+<!-- JSON-LD: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Raiz Games",
+  "url": "https://findmouse.app",
+  "logo": "https://findmouse.app/find_mouz_icon.png",
+  "email": "app.contact.247@gmail.com",
+  "description": "Raiz Games is an indie mobile game studio focused on relaxing, accessible puzzle games for all ages.",
+  "foundingDate": "2025",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "app.contact.247@gmail.com",
+    "contactType": "customer support"
+  }
+}
+</script>
+
+<style>
+:root {
+    --primary: #f59e0b;
+    --primary-dark: #d97706;
+    --accent: #ec4899;
+    --bg: #fffaf0;
+    --text: #1c1917;
+    --secondary: #78716c;
+    --card: #ffffff;
+    --border: #f1e7d6;
+    --gradient: linear-gradient(135deg, #f59e0b 0%, #ec4899 100%);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.container { width: min(820px, 90%); margin: auto; }
+
+.nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 18px 0;
+    background: rgba(255,250,240,.92);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0,0,0,.06);
+}
+
+.nav-inner { display: flex; align-items: center; justify-content: space-between; }
+
+.nav-brand {
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 800; font-size: 18px; text-decoration: none; color: var(--text);
+}
+.nav-brand img { width: 34px; height: 34px; border-radius: 9px; }
+
+.nav-back {
+    text-decoration: none; color: var(--secondary); font-weight: 600; font-size: 14px;
+    display: flex; align-items: center; gap: 6px;
+    padding: 8px 16px; border-radius: 999px; border: 1.5px solid var(--border);
+    transition: .2s;
+}
+.nav-back:hover { color: var(--text); border-color: var(--primary); }
+
+.page-header {
+    padding: 140px 0 60px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+}
+
+.page-header h1 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.page-header p {
+    color: var(--secondary);
+    font-size: 18px;
+    max-width: 520px;
+    margin: auto;
+}
+
+.content { padding: 20px 0 80px; }
+
+.section-block { margin-bottom: 56px; }
+
+.section-block h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border);
+}
+
+.section-block p { color: var(--secondary); font-size: 16px; margin-bottom: 14px; }
+.section-block p:last-child { margin-bottom: 0; }
+
+.stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+.stat-card .num {
+    font-size: 32px;
+    font-weight: 800;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: block;
+}
+
+.stat-card .label {
+    font-size: 13px;
+    color: var(--secondary);
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.contact-card {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 22px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-card .icon {
+    width: 56px; height: 56px;
+    background: linear-gradient(135deg, #fff7e6, #fce7f3);
+    border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px; flex-shrink: 0;
+}
+
+.contact-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.contact-card a {
+    color: var(--primary-dark);
+    font-weight: 600;
+    text-decoration: none;
+}
+.contact-card a:hover { color: var(--accent); }
+
+.cta-row {
+    display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px;
+    justify-content: center;
+}
+
+.btn-primary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--gradient);
+    color: #fff;
+    padding: 13px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(245,158,11,.3);
+    transition: .2s;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(245,158,11,.4); }
+
+.btn-secondary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--card);
+    color: var(--text);
+    padding: 13px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1.5px solid var(--border);
+    transition: .2s;
+}
+.btn-secondary:hover { transform: translateY(-2px); border-color: var(--primary); }
+
+.footer {
+    background: var(--text);
+    color: rgba(255,255,255,.5);
+    text-align: center;
+    padding: 48px 20px;
+    font-size: 15px;
+}
+.footer a.email { color: #fbbf24; text-decoration: none; font-weight: 600; }
+.footer-logo { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+    <div class="container nav-inner">
+        <a href="/" class="nav-brand">
+            <img src="find_mouz_icon.png" alt="Find Mouse app icon">
+            Find Mouse
+        </a>
+        <a href="/" class="nav-back">← Back to Home</a>
+    </div>
+</nav>
+
+<header class="page-header">
+    <div class="container">
+        <h1>About <span>Find Mouse</span></h1>
+        <p>The indie game studio and the story behind your favorite hidden object puzzle.</p>
+    </div>
+</header>
+
+<main class="content">
+    <div class="container">
+
+        <section class="section-block" itemscope itemtype="https://schema.org/VideoGame">
+            <h2>About the Game</h2>
+            <p itemprop="description">
+                <strong itemprop="name">Find Mouse</strong> is a relaxing hidden object puzzle game where players scan beautifully illustrated scenes to find a cleverly hidden mouse. Each level is hand-crafted to be visually rich and satisfying to search, making it the perfect game to unwind with.
+            </p>
+            <p>
+                The gameplay is simple: look carefully at each illustrated scene and tap the mouse the moment you spot it. Scenes grow progressively more detailed and challenging as you advance — going from cozy kitchens to bustling markets to dense forest floors — keeping the game fresh for hundreds of levels.
+            </p>
+            <p>
+                Find Mouse is designed for all ages. Whether you're a child sharpening attention, an adult looking to de-stress, or a grandparent enjoying a relaxing pastime, Find Mouse fits every lifestyle. No timers, no pressure — just the joy of finding the mouse.
+            </p>
+
+            <div class="stat-row">
+                <div class="stat-card">
+                    <span class="num">100+</span>
+                    <span class="label">Unique Scenes</span>
+                </div>
+                <div class="stat-card">
+                    <span class="num">2</span>
+                    <span class="label">Platforms (iOS &amp; Android)</span>
+                </div>
+                <div class="stat-card">
+                    <span class="num">Free</span>
+                    <span class="label">To Download &amp; Play</span>
+                </div>
+                <div class="stat-card">
+                    <span class="num">All Ages</span>
+                    <span class="label">Target Audience</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block" itemscope itemtype="https://schema.org/Organization">
+            <h2>About Raiz Games</h2>
+            <meta itemprop="name" content="Raiz Games">
+            <meta itemprop="url" content="https://findmouse.app">
+            <p itemprop="description">
+                <strong>Raiz Games</strong> is an independent mobile game studio focused on building accessible, high-quality puzzle games that anyone can enjoy. We believe great games don't need to be complicated — they need to be thoughtful, beautiful, and fun.
+            </p>
+            <p>
+                Find Mouse is our first published title, and we pour care and creativity into every illustrated scene. Our goal is to keep expanding the game with new scenes, seasonal updates, and fresh mechanics based on player feedback.
+            </p>
+            <p>
+                We're a small team with a big love for craft. Every level in Find Mouse is carefully composed to balance challenge and satisfaction — we want that "aha!" moment when you finally spot the mouse to feel genuinely rewarding.
+            </p>
+        </section>
+
+        <section class="section-block">
+            <h2>Brain Benefits</h2>
+            <p>
+                Hidden object games like Find Mouse aren't just entertainment — they offer real cognitive benefits. Research on visual search tasks shows that regularly searching complex scenes improves:
+            </p>
+            <p>
+                <strong>Observation skills</strong> — You train your eye to detect subtle differences and notice small details that most people overlook. After 10 levels of Find Mouse, players typically report seeing the world more attentively.
+            </p>
+            <p>
+                <strong>Focus and sustained attention</strong> — Each scene requires you to maintain concentration as you systematically scan the image. This kind of deliberate focus is a form of mindfulness that reduces stress.
+            </p>
+            <p>
+                <strong>Visual memory</strong> — Remembering which areas you've already searched, and recalling visual patterns from earlier levels, exercises short-term visual memory in a natural, enjoyable way.
+            </p>
+        </section>
+
+        <section class="section-block">
+            <h2>Contact Us</h2>
+            <p>Have a question, feedback, or found a bug? We'd love to hear from you.</p>
+            <div class="contact-card">
+                <div class="icon">✉️</div>
+                <div>
+                    <h3>Get in touch</h3>
+                    <p style="margin:0; color: #78716c; font-size: 15px;">
+                        Email us at <a href="mailto:app.contact.247@gmail.com">app.contact.247@gmail.com</a> — we reply within 48 hours.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div style="text-align:center; padding: 10px 0 20px;">
+            <p style="color: var(--secondary); margin-bottom: 24px;">Ready to start finding mice?</p>
+            <div class="cta-row">
+                <a href="https://apps.apple.com/app/id6764365707" target="_blank" rel="noopener" class="btn-primary">
+                    Download on App Store
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.caupv.find.mouz" target="_blank" rel="noopener" class="btn-secondary">
+                    Get on Google Play
+                </a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-logo">Find Mouse</div>
+    <p>by Raiz Games &middot; © 2026 All rights reserved.</p>
+    <p style="margin-top:8px">
+        <a href="mailto:app.contact.247@gmail.com" class="email">app.contact.247@gmail.com</a>
+    </p>
+    <p style="margin-top:12px; font-size:13px;">
+        <a href="/" style="color:rgba(255,255,255,.4); text-decoration:none; margin: 0 8px;">Home</a>
+        <a href="privacy-policy.html" style="color:rgba(255,255,255,.4); text-decoration:none; margin: 0 8px;">Privacy Policy</a>
+        <a href="terms-of-use.html" style="color:rgba(255,255,255,.4); text-decoration:none; margin: 0 8px;">Terms of Use</a>
+    </p>
+</footer>
+
+</body>
+</html>

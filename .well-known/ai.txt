@@ -1,0 +1,17 @@
+# AI Crawler Permissions — findmouse.app
+# Generated: 2026-06-18
+
+Site-name: Find Mouse
+Site-description: Relaxing hidden object puzzle mobile game by Raiz Games
+Site-url: https://findmouse.app
+Contact: app.contact.247@gmail.com
+
+# AI-structured resources
+LLMS: https://findmouse.app/llms.txt
+AI-summary: https://findmouse.app/ai/summary.json
+AI-faq: https://findmouse.app/ai/faq.json
+Sitemap: https://findmouse.app/sitemap.xml
+
+# All AI crawlers are welcome
+User-agent: *
+Allow: /
